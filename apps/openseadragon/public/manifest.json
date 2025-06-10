@@ -20,14 +20,14 @@
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*", "https://cleo-breast.prod.prma.space/*" ],
+      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*"],
       "js": ["boot-loader.js"]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": ["output-thread.js", "input-thread.html", "osd-monkey-patch.js"],
-      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*", "https://cleo-breast.prod.prma.space/*" ]
+      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*"]
     }
   ]
 }
