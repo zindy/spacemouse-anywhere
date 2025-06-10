@@ -1,0 +1,19 @@
+{
+  "name": "openseadragon-spacemouse",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.js --watch --dev",
+    "build": "tsc && node scripts/build.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.243",
+    "@types/openseadragon": "^4.1.0",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  }
+}

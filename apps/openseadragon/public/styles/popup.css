@@ -1,0 +1,108 @@
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  height: 600px;
+  width: 320px;
+  color-scheme: dark light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: grid;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  opacity: 0.75;
+}
+a:where(:hover, :focus) {
+  opacity: 1;
+}
+
+fieldset {
+  border: none;
+}
+
+footer {
+  display: flex;
+  gap: 16px;
+}
+
+form {
+  display: grid;
+  gap: 4px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: ButtonBorder;
+}
+
+meter {
+  height: 20px;
+  width: 100%;
+}
+
+input {
+  min-width: 0;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="text"] {
+  font-family: monospace;
+  padding-inline: 0.5ch;
+}
+
+label:has(input[type="checkbox"]) {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr auto;
+}
+
+.form-linear-layout {
+  display: grid;
+  gap: 4px;
+}
+
+.form-master-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px 16px;
+}
+
+.grid-full-row {
+  grid-column: 1 / -1;
+}
+
+.unit-display-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px;
+}

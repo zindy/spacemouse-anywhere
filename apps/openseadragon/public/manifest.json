@@ -1,0 +1,33 @@
+{
+  "name": "SpaceMouse Driver for OpenseaDragon viewers",
+  "description": "Use your SpaceMouse to navigate an OpenseaDragon viewer",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icon@16.png",
+      "32": "/images/icon@32.png",
+      "48": "/images/icon@48.png",
+      "128": "/images/icon@128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icon@16.png",
+    "48": "/images/icon@48.png",
+    "128": "/images/icon@128.png"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*", "https://cleo-breast.prod.prma.space/*" ],
+      "js": ["boot-loader.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["output-thread.js", "input-thread.html", "osd-monkey-patch.js"],
+      "matches": [ "https://openseadragon.github.io/*", "https://www.virtualpathology.leeds.ac.uk/*", "https://cleo-breast.prod.prma.space/*" ]
+    }
+  ]
+}

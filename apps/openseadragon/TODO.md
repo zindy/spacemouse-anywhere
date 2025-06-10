@@ -1,0 +1,18 @@
+- Clutch mouse button click (share the begin/end click for pan and rotate)
+- Explore web stream based pipeline
+- Prevent inversion from settings menu
+- Prevent sensitity from settings menu
+- Separate camera mode and scene mode
+- Navigator Button map
+- Adjustable dead zone
+- Adjustable limit
+- Add notification bubble for status display
+- Address the relative Zoom problem (when close, Zoom is very slow)
+
+- [x] Dynamic sensitivity
+- [x] Minimum diagnostic UI
+- [x] Buffer architecture: read device @10ms, output integral to buffer, then read buffer @animateFrameRate
+- [x] Consider using iframe to ensure high device reading framerate
+- [x] Prevent memory leak from logging
+- [x] Remain in orbit mode until device inactive
+- [x] Allow interwoven mouse interaction

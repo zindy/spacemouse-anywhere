@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenseaDragon SpaceMouse</title>
+    <link rel="icon" type="image/svg+xml" href="./images/icon.svg" />
+    <link rel="stylesheet" href="./styles/popup.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="form-linear-layout">
+        <div>
+          <label
+            ><span class="fieldname fieldname__block">Sensitivity</span
+            ><input
+              id="sensitivity"
+              name="sensitivity"
+              type="range"
+              min="1"
+              max="9"
+              value="5"
+              step="1"
+              list="tickmarks"
+          /></label>
+          <datalist id="tickmarks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+          </datalist>
+        </div>
+        <div class="form-row">
+          <label for="x">X</label> <label>Invert <input name="invertx" type="checkbox" /></label>
+          <meter id="x" class="grid-full-row" value="0" min="-1" max="1" low="-0.05" high="0.05" optimum="1"></meter>
+        </div>
+        <div class="form-row">
+          <label for="y">Y</label><label>Invert <input name="inverty" type="checkbox" /></label>
+          <meter id="y" class="grid-full-row" value="0" min="-1" max="1" low="-0.5" high="0.5"></meter>
+        </div>
+        <div class="form-row">
+          <label for="z">Z</label><label>Invert <input name="invertz" type="checkbox" /></label>
+          <meter id="z" class="grid-full-row" value="0" min="-1" max="1" low="-0.5" high="0.5"></meter>
+        </div>
+        <div class="form-row">
+          <label for="rx">RX</label><label>Invert <input name="invertrx" type="checkbox" /></label>
+          <meter id="rx" class="grid-full-row" value="0" min="-1" max="1" low="-0.5" high="0.5"></meter>
+        </div>
+        <div class="form-row">
+          <label for="ry">RY</label><label>Invert <input name="invertry" type="checkbox" /></label>
+          <meter id="ry" class="grid-full-row" value="0" min="-1" max="1" low="-0.5" high="0.5"></meter>
+        </div>
+        <div class="form-row">
+          <label for="rz">RZ</label><label>Invert <input name="invertrz" type="checkbox" /></label>
+          <meter id="rz" class="grid-full-row" value="0" min="-1" max="1" low="-0.5" high="0.5"></meter>
+        </div>
+        <div class="form-row">
+          <label for="buttons-container">Buttons</label>
+          <div id="buttons-container" class="grid-full-row" style="margin-top: 4px; display: flex; flex-wrap: wrap; max-width: 100%; line-height: 1.2;"></div>
+        </div>
+      </fieldset>
+      <fieldset class="form-master-detail-layout">
+        <div class="form-master-detail__master form-row grid-full-row">
+          <label for="status">Status</label>
+          <input id="status" class="grid-full-row" type="text" readonly value="Disconnected" />
+        </div>
+        <label class="unit-display-layout">
+          <span class="fieldname fieldname__block grid-full-row">Input rate</span>
+          <input id="scan" type="text" readonly /><span>Hz</span>
+        </label>
+        <label class="unit-display-layout">
+          <span class="fieldname fieldname__block grid-full-row">Frame rate</span>
+          <input id="fps" type="text" readonly /> FPS
+        </label>
+        <label class="unit-display-layout">
+          <span class="fieldname fieldname__block grid-full-row">Latency</span>
+          <input id="latency" type="text" readonly /> ms
+        </label>
+      </fieldset>
+    </form>
+    <footer>
+      <a href="https://openseadragon.github.io/" target="_blank">OpenseaDragon</a>
+      <a
+        href="https://github.com/chuanqisun/spacemouse-anywhere/issues/new?assignees=&labels=openseadragon&template=openseadragon-extension.md&title="
+        target="_blank"
+        >Report an issue</a
+      >
+      <a href="https://github.com/chuanqisun/spacemouse-anywhere" target="_blank">GitHub</a>
+    </footer>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>
