@@ -31,11 +31,7 @@ OpenSeadragon viewer does not provide official API for manipulating the camera o
 
 I'd like to gather feedback and build features that matter the most to the users. Here are a few ideas, not necessarily ranked in any order. If you have an idea, please let me know by [submitting an issue](https://github.com/chuanqisun/sketchup-web-spacemouse/issues/new).
 
-- **Walk mode**: use SpaceMouse to manipulate camera and look around.
-- **Object mode**: use SpaceMouse to manipulate selected object, independent of other objects in the scene.
-- **Button binding**: bind SpaceMouse buttons to commands in SketchUp.
-- **6-DOF**: add support for rolling left/right and gravity suspension.
-- **Generic joystick**: use XBox Gamepad or other USB Joystick to control SketchUp
+- **Button binding**: Refine button interactions (just pressed, is pressed, is released), add more interactions.
 
 ## Disclaimer
 
